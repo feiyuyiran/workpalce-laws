@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中德职场暴力和骚扰法律条文</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #007acc;
+            color: white;
+            padding: 1rem 2rem;
+            text-align: center;
+        }
+        main {
+            padding: 2rem;
+        }
+        section {
+            margin-bottom: 2rem;
+        }
+        h2 {
+            color: #007acc;
+        }
+        .law-section {
+            margin-bottom: 1rem;
+        }
+        .law-section h3 {
+            cursor: pointer;
+            color: #005f99;
+        }
+        .law-section p {
+            display: none;
+            background-color: #e0f7fa;
+            padding: 1rem;
+            border-left: 4px solid #007acc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>中德职场暴力和骚扰法律条文</h1>
+    </header>
+    <main>
+        <section>
+            <h2>中国相关法律</h2>
+            <div class="law-section">
+                <h3 onclick="toggleVisibility('law1')">《中华人民共和国劳动法》 第88条</h3>
+                <p id="law1">
+                    该条款保护劳动者免受劳动关系中的不公平对待。原文: "劳动者依法享有的权利不得受到侵害。"
+                </p>
+            </div>
+            <div class="law-section">
+                <h3 onclick="toggleVisibility('law2')">《中华人民共和国妇女权益保障法》 第38条</h3>
+                <p id="law2">
+                    该条款要求用人单位采取措施防止对妇女的性骚扰。原文: "用人单位应当采取措施，防止对妇女的性骚扰。"
+                </p>
+            </div>
+            <div class="law-section">
+                <h3 onclick="toggleVisibility('law3')">《中华人民共和国刑法》 第237条</h3>
+                <p id="law3">
+                    该条款对“强制猥亵、侮辱妇女”的行为规定刑事处罚。原文: "以暴力、胁迫或者其他方法强制猥亵、侮辱妇女的，处五年以下有期徒刑或者拘役。"
+                </p>
+            </div>
+        </section>
+        
+        <section>
+            <h2>德国相关法律</h2>
+            <div class="law-section">
+                <h3 onclick="toggleVisibility('law4')">《反歧视法》(Allgemeines Gleichbehandlungsgesetz, AGG) 第3条</h3>
+                <p id="law4">
+                    该条款定义了骚扰和性骚扰，包括基于多种歧视类型的行为。原文: "Belästigung liegt vor, wenn unerwünschte Verhaltensweisen erfolgen, die bezwecken oder bewirken, dass die Würde der betreffenden Person verletzt wird."
+                </p>
+            </div>
+            <div class="law-section">
+                <h3 onclick="toggleVisibility('law5')">《刑法典》(Strafgesetzbuch, StGB) 第184i条</h3>
+                <p id="law5">
+                    该条款详细规定了性骚扰行为及其刑事处罚。原文: "Wer eine andere Person in sexuell bestimmter Weise körperlich berührt und dadurch belästigt, wird mit Freiheitsstrafe bis zu zwei Jahren oder mit Geldstrafe bestraft."
+                </p>
+            </div>
+            <div class="law-section">
+                <h3 onclick="toggleVisibility('law6')">《职场健康与安全法》(Arbeitsschutzgesetz, ArbSchG) 第5条</h3>
+                <p id="law6">
+                    该条款要求雇主评估工作场所的风险，包括骚扰和暴力行为。原文: "Der Arbeitgeber hat durch eine Beurteilung der für die Beschäftigten mit ihrer Arbeit verbundenen Gefährdungen zu ermitteln."
+                </p>
+            </div>
+            <div class="law-section">
+                <h3 onclick="toggleVisibility('law7')">《民法典》(Bürgerliches Gesetzbuch, BGB) 第611a条</h3>
+                <p id="law7">
+                    该条款保护员工免受基于性别的骚扰，并赋予受害者在遭受骚扰时提出申诉和要求赔偿的权利。原文: "Arbeitgeber und Beschäftigte dürfen bei einer sexuellen Belästigung im Arbeitsverhältnis nicht benachteiligt werden."
+                </p>
+            </div>
+        </section>
+    </main>
+    <script>
+        function toggleVisibility(id) {
+            var element = document.getElementById(id);
+            if (element.style.display === "none") {
+                element.style.display = "block";
+            } else {
+                element.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
